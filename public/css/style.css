@@ -1,0 +1,385 @@
+/*// CREATE BY jibeyyy
+//   2023
+// vitrine site
+*/
+
+body {
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+
+/*  ///  start home page   ///
+*/
+
+.mainHome {
+    background-image: url('../images/ArbreRacine.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.item {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.item1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 48%;
+    font-size: smaller;
+}
+
+.item1 a {
+    border: solid 0.5px gold;
+    padding: 5px 15px;
+}
+
+.item a {
+
+    color: gold;
+    font-size: 2em;
+}
+
+.item2 {
+    height: 15%;
+    align-items: center;
+}
+
+.item3 {
+    height: 20%;
+    align-items: center;
+}
+
+.item4 {
+    height: 20%;
+    align-items: center;
+}
+
+.headMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 80px;
+    border-radius: 50%;
+}
+
+/* end home page */
+
+/* header commun */
+
+.burger-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.sidenav {
+    display: block;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #111;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidenav.active {
+    left: 0;
+}
+
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.burger-icon span {
+    visibility: visible;
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.headOtherMobi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+.headDesk {
+    display: none;
+}
+
+/* end header commun */
+
+/* competence page  */
+
+table,
+td {
+    border: 1px solid #333;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+
+/*
+////////////////////////////////////////
+///////////// FOOTER ///////////////////
+*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccc;
+    padding: 0;
+    text-align: center;
+}
+
+h3 {
+    color: green;
+    border-bottom: 1px solid green;
+    padding-bottom: 5px;
+}
+
+.listFoot a {
+    color: grey;
+}
+
+.listFoot a:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+
+/*////////// SECTION RESPONSIVE SITE ////////////*/
+
+@media only screen and (min-width: 600px) {
+
+    body {
+        font-size: 16px;
+        background: linear-gradient(0deg, rgba(204, 204, 204, 1) 12%, rgba(144, 238, 144, 0.9178046218487395) 98%);
+    }
+    /* header */
+    .headOtherMobi {
+        display: none;
+    }
+    .headDesk {
+        display: block;
+        background-image: url('../images/cerisier.jpg');
+        background-position: top;
+        background-size: 100% 285%;
+        background-repeat: no-repeat;
+        height: 200px;
+    }
+    .headLogo {
+
+        background-color: lightgreen;
+        display: flex;
+        opacity: 0.8;
+        height: 50px;
+        align-items: center;
+        font-size: small;
+        justify-content: space-around;
+    }
+    .logo {
+        width: 50px;
+        border-radius: 50%;
+    }
+    .navHead {
+        margin: 0;
+        width: 60%;
+    }
+    .navHead ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .navHead ul a {
+        color: #000;
+        font-size: 14px;
+        margin: 0 10px;
+    }
+
+    /* end header */
+    .item1 {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: center;
+        height: 40%;
+
+        -moz-text-align: center;
+        -moz-display: flex;
+        -moz-flex-direction: row;
+        -moz-align-items: end;
+        -moz-justify-content: center;
+        -moz-height: 40%;
+    }
+    .item1 a {
+        display: flex;
+        width: 140px;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        border: none;
+        margin: 0 6px;
+        transform-origin: center;
+        transform: rotate(90deg);
+        transition: transform 0.3s;
+        justify-content: center;
+        border-radius: 15px;
+        padding: 8px;
+
+        -moz-display: flex;
+        -moz-width: 140px;
+        -moz-background-color: #4CAF50;
+        -moz-color: white;
+        -moz-font-size: 16px;
+        -moz-border: none;
+        -moz-margin: 0 6px;
+        -moz-transform-origin: center;
+        -moz-transform: rotate(90deg);
+        -moz-transition: transform 0.3s;
+        -moz-justify-content: center;
+        -moz-border-radius: 15px;
+        -moz-padding: 8px;
+    }
+
+    .item1 a:hover {
+        transform: rotate(0deg);
+        /* Rotation au survol */
+    }
+
+    .item2 {
+        height: 18%;
+        align-items: end;
+    }
+
+    .item3 {
+        height: 20%;
+        align-items: center;
+    }
+
+    .item4 {
+        height: 14%;
+        align-items: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media only screen and (min-width: 900px) {
+
+    body {
+        font-size: 18px;
+        background: linear-gradient(0deg, rgba(204, 204, 204, 1) 12%, rgba(144, 238, 144, 0.9178046218487395) 98%);
+        -moz-font-size: 18px;
+        -moz-background: linear-gradient(0deg, rgba(204, 204, 204, 1) 12%, rgba(144, 238, 144, 0.9178046218487395) 98%);
+        -ms-font-size: 18px;
+        -ms-background: linear-gradient(0deg, rgba(204, 204, 204, 1) 12%, rgba(144, 238, 144, 0.9178046218487395) 98%);
+    }
+
+    .mainHome {
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 20px;
+    }
+    .headDesk {
+        background-size: 100% 286%;
+        background-repeat: no-repeat;
+        width: 80%;
+        margin: 0 auto;
+        height: 350px;
+        border-radius: 20px;
+    }
+    .navHead {
+        margin: 0;
+        width: 50%;
+    }
+    .navHead ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    .navHead ul a {
+        color: #000;
+        font-size: 16px;
+    }
+    .logo {
+        width: 85px;
+        border-radius: 50%;
+    }
+    .headLogo {
+        background-color: lightgreen;
+        display: flex;
+        opacity: 0.8;
+        justify-content: space-evenly;
+        height: 90px;
+        align-items: center;
+    }
+}
