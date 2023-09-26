@@ -4,8 +4,23 @@
 */
 
 body {
+    font-family: cursive, Helvetica, Arial;
     font-size: 15px;
-    box-sizing: border-box;
+    background: linear-gradient(0deg, rgba(204, 204, 204, 1) 12%, rgba(144, 238, 144, 0.9766281512605042) 98%);
+}
+
+.arrow {
+    font-size: 2em;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.activiNav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 
@@ -84,6 +99,20 @@ li {
 
 a {
     text-decoration: none;
+}
+
+a:hover {
+    background-color: #0c7a20;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+a:active {
+    background-color: #00ff35;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: wait;
 }
 
 .logo {
@@ -181,6 +210,83 @@ tfoot {
     color: #fff;
 }
 
+/* end competence page */
+
+/* valeur page */
+
+.mainValeur {
+
+    text-align: center;
+    margin: 1em;
+    font-size: 1.5em;
+
+}
+
+.grid {
+    background: linear-gradient(96deg, #0f01fc 0%, #00d4ff 50%);
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.grid div {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.grid i {
+    font-size: 2em;
+}
+
+.grid h3 {
+    font-size: 1.5em;
+}
+
+/* end valeur page */
+
+/* about page */
+
+.aboutMain {
+    text-align: center;
+}
+
+.sectionAbout {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.aboutImg h3 {
+    width: 60%;
+    margin: 20px auto;
+    color: green;
+    border-bottom: 1px solid green;
+    padding: 10px;
+    box-shadow: 2px 1px darkgreen;
+}
+
+.aboutImg img {
+    width: 80%;
+}
+
+.aboutText {
+    line-height: 1.5em;
+    width: 85%;
+    margin: 10px auto;
+    text-align: justify;
+}
+
+/* end about page */
+
 /*
 ////////////////////////////////////////
 ///////////// FOOTER ///////////////////
@@ -193,13 +299,15 @@ footer {
     background-color: #ccc;
     padding: 0;
     text-align: center;
+    font-size: 1.5em;
 }
 
-h3 {
+footer h3 {
     color: green;
     border-bottom: 1px solid green;
     padding-bottom: 5px;
 }
+
 
 .listFoot a {
     color: grey;
@@ -209,6 +317,7 @@ h3 {
     background-color: lightgreen;
     color: black;
 }
+
 
 
 /*////////// SECTION RESPONSIVE SITE ////////////*/
@@ -256,7 +365,21 @@ h3 {
     .navHead ul a {
         color: #000;
         font-size: 14px;
-        margin: 0 10px;
+        padding: 5px;
+    }
+    a:hover {
+        background-color: #0c7a20;
+        color: #fff;
+        border-radius: 5px;
+        padding: 5px 10px;
+
+    }
+
+    a:active {
+        background-color: #00ff35;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: wait;
     }
 
     /* end header */
@@ -267,6 +390,7 @@ h3 {
         align-items: end;
         justify-content: center;
         height: 40%;
+
 
         -moz-text-align: center;
         -moz-display: flex;
@@ -282,13 +406,12 @@ h3 {
         color: white;
         font-size: 16px;
         border: none;
-        margin: 0 6px;
         transform-origin: center;
         transform: rotate(90deg);
-        transition: transform 0.3s;
+        transition: transform 1s;
         justify-content: center;
         border-radius: 15px;
-        padding: 8px;
+        padding: 12px 14px;
 
         -moz-display: flex;
         -moz-width: 140px;
@@ -296,18 +419,17 @@ h3 {
         -moz-color: white;
         -moz-font-size: 16px;
         -moz-border: none;
-        -moz-margin: 0 6px;
         -moz-transform-origin: center;
         -moz-transform: rotate(90deg);
-        -moz-transition: transform 0.3s;
+        -moz-transition: transform 1s;
         -moz-justify-content: center;
         -moz-border-radius: 15px;
-        -moz-padding: 8px;
+        -moz-padding: 12px 14px;
     }
 
     .item1 a:hover {
         transform: rotate(0deg);
-        /* Rotation au survol */
+
     }
 
     .item2 {
@@ -325,13 +447,46 @@ h3 {
         align-items: center;
     }
 
+    .aboutImg h3 {
+        font-size: 2em;
+    }
+
     footer {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
     }
-
+    footer div {
+        font-size: 20px;
+        width: 20%;
+    }
+    /* valeur page */
+    .grid {
+        background: linear-gradient(96deg, #0f01fc 0%, #00d4ff 50%);
+        width: 85%;
+        display: flex;
+        flex-flow: row-reverse;
+        margin: 10px auto;
+        justify-content: space-around;
+        padding: 30px 20px;
+        font-size: 10px;
+    }
+    .grid div {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        text-align: center;
+    }
+    .grid i {
+        font-size: 2em;
+    }
+    .grid h3 {
+        font-size: 1.5em;
+    }
+    /* end valeur page */
 }
 
 @media only screen and (min-width: 900px) {
@@ -351,7 +506,7 @@ h3 {
         border-radius: 20px;
     }
     .headDesk {
-        background-size: 100% 286%;
+
         background-repeat: no-repeat;
         width: 80%;
         margin: 0 auto;
@@ -369,6 +524,11 @@ h3 {
     .navHead ul a {
         color: #000;
         font-size: 16px;
+        padding: 5px;
+    }
+    .navHead ul a:hover {
+        color: #fff;
+        transform: scale(1.5);
     }
     .logo {
         width: 85px;
@@ -381,5 +541,103 @@ h3 {
         justify-content: space-evenly;
         height: 90px;
         align-items: center;
+    }
+    .sectionAbout {
+        margin: 20px auto;
+        width: 80%;
+    }
+    .aboutImg h3 {
+        font-size: 3em;
+        text-shadow: 1px 0px #000;
+    }
+    .aboutImg img {
+        width: 60%;
+        border-radius: 20px;
+    }
+    a:hover {
+        background-color: #0c7a20;
+        color: #fff;
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
+
+    a:active {
+        background-color: #00ff35;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: wait;
+
+    }
+    /* valeur page */
+    .mainValeur {
+        text-align: center;
+        margin: 3em;
+        font-size: 1.5em;
+    }
+
+    .grid {
+        background: linear-gradient(96deg, #0f01fc 0%, #00d4ff 50%);
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px auto;
+        justify-content: space-between;
+        padding: 30px 20px;
+        font-size: 1em;
+        border-radius: 10px;
+    }
+
+    .grid div {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+    }
+    /* Activitis page */
+    .cont-hoover {
+        display: flex;
+        position: relative;
+        width: 50%;
+        margin: 10px auto;
+    }
+    .cont-hoover img {
+        max-width: 100%;
+    }
+
+    .hover {
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        top: 20px;
+        left: 36px;
+        border: 2px solid #fff;
+        background-color: rgba(50, 93, 43, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: 0.6s;
+
+    }
+
+    .hover:hover {
+        opacity: 1;
+
+    }
+
+    .hover p {
+        border: none;
+        color: #fff;
+    }
+    .arrow {
+        font-size: 2em;
+        position: fixed;
+        bottom: 16px;
+        right: 40px;
+
     }
 }
