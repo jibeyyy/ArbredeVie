@@ -13,3 +13,9 @@ function openNav() {
 function closeNav() {
     sidenav.classList.remove("active"); // fonction remove pour suprimer la div via l'id html
 }
+///////// ancre select Onglets ///////
+function allerVersPage() {
+    var selecteur = document.getElementById("selecteur");
+    var selectedValue = selecteur.options[selecteur.selectedIndex].value;
+    window.location.href = selectedValue;
+}

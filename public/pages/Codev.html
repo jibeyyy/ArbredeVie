@@ -18,17 +18,34 @@
 </head>
 
 <body>
-    <header class="headOtherMobi">
-        <img class="logo" src="../images/logo.svg" alt="logo arbre de vie">
+       <header class="headOtherMobi">
+        <img class="logoHead" src="../images/logo.svg" alt="logo arbre de vie">
         <h1>Mon Arbre de Vie</h1>
         <div id="mySidenav" class="sidenav">
             <a id="closeBtn" href="#" class="close">×</a>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="competence.html">Mes Compétences</a></li>
-                <li><a href="valeur.html">Mes Valeurs</a></li>
-                <li><a href="about.html">Qui suis-je?</a></li>
+                <li><a href="about.html">-- Qui suis-je</a></li>
+                <li><a href="index.html">-- Accueil</a></li>
+                <li><a href="activitis.html">-- Mes Activitées</a></li>
+                <li><a href="competence.html">-- Mes Compétences</a></li>
+            </ul>
+            <ul>
+                <li><a href="activitis.html">-- Atelier Arbre de Vie</a>
+                </li>
+                <li><a href="Codev.html">-- Atelier Co-Développement</a>
+                </li>
+                <li>
+                    <a href="format.html">-- Les Formations</a>
+                </li>
+                <li>
+                    <a href="team.html">-- Intervention dans les Équipes</a>
+                </li>
+                <li>
+                    <a href="super.html">-- Supervision</a>
+                </li>
+                <li>
+                    <a href="biblio.html">-- Ressources Bibliographique/ Ressources Externe</a>
+                </li>
             </ul>
         </div>
         <a href="#" id="openBtn" class="BtnA">
@@ -46,22 +63,29 @@
             <nav class="navHead">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+
                     <li><a href="competence.html">Mes Compétences</a></li>
-                    <li><a href="valeur.html">Mes Valeurs</a></li>
                     <li><a href="about.html">Qui suis-je?</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="mainCodev">
-        <div class="activiNav">
-            <ul>
-
-                <li class="preview"><i class="fas fa-arrow-left"><a href="activitis.html">Arbre de vie</a></li></i>
-                    <li class="next"><a href="team.html">Intervention dans les Équipes</a><i class="fas fa-arrow-right"></li></i>
-            </ul>
+        <div>
+            <label for="selecteur"></label>
+            <select id="selecteur" onchange="allerVersPage()">
+                <optgroup label="Sélectionnez un onglet :">
+                    <option value="Sélectionnez une une page :">Sélectionnez un onglet :</option>
+        <option value="activitis.html">Arbre de Vie</option>
+        <option value="Codev.html">Co-Développement</option>
+        <option value="format.html">Formations</option>
+        <option value="super.html">Supervisions</option>
+        <option value="team.html">Intervention dans les Équipes</option>
+        <option value="biblio.html">Ressources biblio/externe</option>
+       </optgroup>
+    </select>
         </div>
+
         <section class="CodevTitle">
 
             <h2>ENTRE PAIRS : groupe de codéveloppement adressé aux cadres et adjoints pédagogiques du secteur Enfance, Pré et Parascolaire.</h2>
@@ -98,13 +122,14 @@
                 </ul>
             </div>
         </section>
-        <section class="sectionCMidle">
+        <section class="sectionCMidle section-right">
             <h3>QUEL EST MON RÔLE ? </h3>
             <div class="contBox">
                 <div class="box box3">
                     <p>Lors du CODEV j’aurai le rôle de facilitatrice et personne-ressource. Je vous accompagnerai selon un processus bien défini en 6 étapes (selon la méthode élaborée par A. Payette et C. Champagne) en étant garante des modalités, de la
                         finalité et des valeurs sous-jacentes : Entraide, Engagement, Respect.</p>
                 </div>
+                <div class="separate"></div>
                 <div class="box box4">
                     <p>Je mettrai à votre service toutes mes compétences, créativité et passion du métier afin de vous offrir soutien, répit et ressourcement, pour un mieux-être dans votre fonction de cadre.</p>
                 </div>
@@ -118,38 +143,40 @@
                 <li>Une fois les personnes réunies, un doodle nous permettra de trouver des moments communs : 2h30 ( en matinée ou après-midi)</li>
                 <li>Prix : 450.- pour les 8 séances</li>
                 <li>Lieu : Lausanne (le lieu précis sera renseigné lors de l’inscription)</li>
-                <li><a href="contact.html">Inscriptions Ici</a></li>
+                <li><a href="mailto:lucia.tenore@bluewin.ch">Inscriptions Ici</a></li>
                 <li>Le groupe commence en octobre 2023 et termine en juin 2024. </li>
-                <li>Vous retrouverez les prochaines dates sur mon <a href="https://www.linkedin.com/in/lucia-tenore-2168a47b/" target="_blank">linkedin</a></li>
+                <li>Vous retrouverez les prochaines dates <a href="format.html" aria-labelledby="formation">Ici</a> et sur mon <a href="https://www.linkedin.com/in/lucia-tenore-2168a47b/" target="_blank">linkedin</a></li>
             </ul>
         </section>
-
-        <div class="arrow"><a href="#"><i class="fas fa-arrow-up"></i></a></div>
-    </main>
-
-    <footer>
-
-        <div>
-            <h3>A propos</h3>
+        <div class="activiNav">
             <ul>
-                <li class="listFoot"><a href="index.html">Accueil</a></li>
-                <li class="listFoot"><a href="plansite.html">Plan du site</a></li>
-                <li class="listFoot"><a href="mention.html">Mention légale</a></li>
+
+                <li class="preview"><i class="fas fa-arrow-left"></i><a href="format.html">Formations</a></li>
+                    <li class="next"><a href="team.html">Intervention dans les Équipes</a><i class="fas fa-arrow-right"></i></li>
             </ul>
         </div>
+        <div class="arrow"><a href="#"><i class="fas fa-arrow-up"></i></a></div>
+    </main>
+    <footer>
         <div>
             <img class="logo" src="../images/logo.svg" alt="logo Arbre de vie">
         </div>
-        <div>
-            <h3>Mes Réseaux</h3>
-            <ul>
-                <li class="listFoot"><a href="https://www.linkedin.com/in/lucia-tenore-2168a47b/" target="_blank">Mon Linkedin</a></li>
-                <li class="listFoot"><a href="mailto:lucia.tenore@bluewin.ch">Mon Email</a></li>
-
-            </ul>
+        <div class="divFooter">
+            <div>
+                <h3>CONTACT :</h3>
+            </div>
+            <div>
+                <ul class="listFoot">
+                    <li><i class="fas fa-map-marker-alt"></i>
+                        <address>Avenue de Cour 7, 1007 Lausanne</address>
+                    </li>
+                    <li><i class="fas fa-phone"></i><a href="tel:+41794402067">+4179/440.20.67</a></li>
+                    <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/lucia-tenore-2168a47b/" target="_blank">Mon Linkedin</a></li>
+                    <li><i class="fas fa-at"></i><a href="mailto:lucia.tenore@bluewin.ch">Mon Email</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
     <script src="../js/script.js"></script>
 </body>
-
 </html>
