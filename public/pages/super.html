@@ -6,11 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Atelier Supervision, information">
-
     <title>Supervisions</title>
-
     <link rel="icon" type="image/png" href="../images/logo.svg">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <link rel="stylesheet" href="../css/normalize.css" type="text/css">
@@ -18,33 +15,31 @@
 </head>
 
 <body>
-     <header class="headOtherMobi">
+    <header class="headOtherMobi">
         <img class="logoHead" src="../images/logo.svg" alt="logo arbre de vie">
         <h1>Mon Arbre de Vie</h1>
         <div id="mySidenav" class="sidenav">
             <a id="closeBtn" href="#" class="close">×</a>
             <ul>
-                <li><a href="about.html">-- Qui suis-je</a></li>
-                <li><a href="index.html">-- Accueil</a></li>
-                <li><a href="activitis.html">-- Mes Activitées</a></li>
-                <li><a href="competence.html">-- Mes Compétences</a></li>
+                <li><a href="index.html">- Accueil</a></li>
+                <li><a href="about.html">- Qui suis-je</a></li>
             </ul>
             <ul>
-                <li><a href="activitis.html">-- Atelier Arbre de Vie</a>
+                <li>
+                    <a href="super.html">- Supervision</a>
                 </li>
-                <li><a href="Codev.html">-- Atelier Co-Développement</a>
+                <li><a href="activitis.html">- Atelier Arbre de Vie</a>
+                </li>
+                <li><a href="Codev.html">- Atelier Co-Développement</a>
                 </li>
                 <li>
-                    <a href="format.html">-- Les Formations</a>
+                    <a href="format.html">- Formations continue</a>
                 </li>
                 <li>
-                    <a href="team.html">-- Intervention dans les Équipes</a>
+                    <a href="team.html">- Intervention dans les Équipes</a>
                 </li>
                 <li>
-                    <a href="super.html">-- Supervision</a>
-                </li>
-                <li>
-                    <a href="biblio.html">-- Ressources Bibliographique/ Ressources Externe</a>
+                    <a href="biblio.html">- Ressources Bibliographique et liens</a>
                 </li>
             </ul>
         </div>
@@ -58,13 +53,12 @@
     </header>
     <header class="headDesk">
         <div class="headLogo">
-            <img class="logo" src="../images/logo.svg" alt="logo arbre de vie">
+            <img class="logoHead" src="../images/logo.svg" alt="logo arbre de vie">
             <h1>Mon Arbre de Vie</h1>
             <nav class="navHead">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="activitis.html">Mes Activitées</a></li>
-                    <li><a href="competence.html">Mes Compétences</a></li>
                     <li><a href="about.html">Qui suis-je?</a></li>
                 </ul>
             </nav>
@@ -72,11 +66,11 @@
     </header>
 
     <main>
-        <div>
+        <div class="select">
             <label for="selecteur"></label>
             <select id="selecteur" onchange="allerVersPage()">
                 <optgroup label="Sélectionnez un onglet :">
-                    <option value="Sélectionnez un onglet :">Sélectionnez un onglet :</option>
+                    <option>Sélectionnez un onglet :</option>
         <option value="activitis.html">Arbre de Vie</option>
         <option value="Codev.html">Co-Développement</option>
         <option value="format.html">Formations</option>
@@ -86,39 +80,66 @@
        </optgroup>
     </select>
         </div>
-        <section>
-            <h1>Supervisions</h1>
-            <h3>La supervision, un acte de formation</h3>
-            <p>La supervision s'adresse à des personnes, des groupes ou des équipes. En s'appuyant sur des situations concrètes et quotidiennes, elle offre la possibilité de
-                <span class="bold">réfléchire sur le fonctionnement professionnel</span> afin d'en mieux gérer les exigences.
-            </p>
-            <p>La supervision a pour objectif <span class="bold">l'amelioration des compétences professionnelles</span> en lien avec les prestations offertes, le contexte, les relations avec les bénéficiaireq et l'équipe de professionnels.</p>
-            <p>La supervision prends du sens lorsque le supervisé renforce la conscience de lui-même, de sa volonté à coopérer et sa capcacité é créer des liens interpersonnels.</p>
-            <p>La supervision vise <span class="bold">le développement professionnel</span> et personnel ainsi que l'acquisition de compètences spychosociales.</p>
-            <p>Elle amène le supervisé à s'interroger sur ses attitudes, ses paroles, ses perceptions, ses émotions et ses actions. Elle aide à développer la lucidité et la prise de distance afin de mieux gérer les situations complexes. </p>
-            <p>La supervision favorise <span class="bold">l'integration de l'expérience</span> et l'assimilation des apports théoriques.</p>
-            <p>elle est un processus s'appuyant sur <span class="bold">la réflexion.</span> Afin qu'un travail de conscientisation, de maturation puisse avoir lieu, la supervision se déroule sur une durée déterminée et rythmée par des séances ayant lieu de façon régulière.
-            </p>
-             
-            <small>Source 2010, le comité de l'ARS</small> 
+        <section class="sectionSuper">
+            <h1>Supervision</h1>
+            <div class="SuperRight">
+                <img src="../images/super/imgSupervision.jpg" alt="photo atelier supervison par Lucia Tenore">
+                <p>J’exerce en tant que superviseure diplômée depuis 18 ans et je fais partie de l’ARS: L’association Romande des Superviseurs.</p>
+            </div>
+            <div class="superLeft">
+                <img src="../images/super/imgSupervisionD.jpg" alt="photo atelier supervison par Lucia Tenore">
+                <p>La supervision est un magnifique outil de développement professionnel et personnel. Se questionner, rechercher le sens, faire émerger les émotions, analyser ses pratiques:<br> de nombreux bénéfices tant pour la personne que pour son contexte
+                    de travail.</p>
+            </div>
+            <div class="SuperRight">
+                <img src="../images/super/imgSupervisionB.jpg" alt="photo atelier supervison par Lucia Tenore">
+                <p>Je peux vous proposer des supervisions individuelles, pédagogiques ou professionnelles ainsi que des supervisions d’équipe. Je collabore avec différentes écoles telles que HETSL, ESEDE, ARPIH, ESSIL, HEVS.</p>
+            </div>
+            <div>
+                <ul><span class="bold"><h3>Mes différents outils :</h3></span>
+                    <li><span class="content">&xrArr;</span><span class="bold"> L’Approche Systémique</span>
+                    </li>
+                    <li><span class="content">&xrArr;</span><span class="bold"> l’Analyse Transactionnelle</span>
+                    </li>
+                    <li><span class="content">&xrArr;</span><span class="bold"> La psychologie positive</span>
+                    </li>
+                    <li><span class="content">&xrArr;</span><span class="bold"> La Communication Non-Violente</span>
+                    </li>
+                    <li><span class="content">&xrArr;</span><span class="bold"> Le Courant Humaniste</span>
+                    </li>
+                    <li><span class="content">&xrArr;</span><span class="bold"> Les Pratiques Narrative : Arbre de Vie professionnel et Chemin de vie professionnel</span>
+                    </li>
+                    <li><span class="content">&xrArr;</span><span class="bold"> Les Méthodes d’Action (selon Moreno)</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="superLeft">
+                <img src="../images/super/imgSupervisionC.jpg" alt="photo atelier supervison par Lucia Tenore">
+                <p>Vous trouverez dans mes références bibliographiques, de nombreux ouvrages qui nourrissent, soutiennent ma réflexion ainsi que ma posture professionnelle.</p>
+            </div>
+            <div class="SuperRight">
+                <img src="../images/super/imgSupervisionE.jpg" alt="photo atelier supervison par Lucia Tenore">
+                <p>La supervision est un processus, un co-cheminement : JE VOUS INVITE À FAIRE UN BOUT DE CHEMIN AVEC MOI.</p>
+            </div>
+            <div class="sectionTable">
+                <h2>Modalités :</h2>
+                <p>Les supervisions se déroulent à mon domicile. Selon les situations, elles peuvent se dérouler à distance (uniquement pour les supervisions professionnelles et non pédagogiques).</p>
+            </div>
 
+            <div class="priceSuper">
+                <p><span class="bold">Tarif des supervisions pédagogique :</span> selon le barème de l’école </p>
+                <hr class="hr">
+                <p><span class="bold">Tarif des supervisions professionnelles :</span> 120.- 1h</p>
+                <hr class="hr">
+                <p><span class="bold">N’hésitez pas à prendre contact avec moi. Le premier échange de 30 minutes ne sera pas facturé.</span></p>
+            </div>
         </section>
-
-
-
-
-
         <div class="activiNav">
             <ul>
-
                 <li class="preview"><i class="fas fa-arrow-left"></i><a href="team.html">Intervention dans les Équipes</a></li>
-                    <li class="next"><a href="activitis.html">Arbre de Vie</a><i class="fas fa-arrow-right"></li></i>
+                <li class="next"><a href="activitis.html">Arbre de Vie</a><i class="fas fa-arrow-right"></li></i>
             </ul>
         </div>
-
-
-
-
         <div class="arrow"><a href="#"><i class="fas fa-arrow-up"></i></a></div>
     </main>
     <footer>
@@ -131,16 +152,21 @@
             </div>
             <div>
                 <ul class="listFoot">
-                    <li><i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <li>
                         <address>Avenue de Cour 7, 1007 Lausanne</address>
                     </li>
-                    <li><i class="fas fa-phone"></i><a href="tel:+41794402067">+4179/440.20.67</a></li>
-                    <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/lucia-tenore-2168a47b/" target="_blank">Mon Linkedin</a></li>
-                    <li><i class="fas fa-at"></i><a href="mailto:lucia.tenore@bluewin.ch">Mon Email</a></li>
+                    <i class="fas fa-phone"></i>
+                    <li><a href="tel:+41794402067">+4179/440.20.67</a></li>
+                    <i class="fab fa-linkedin"></i>
+                    <li><a href="https://www.linkedin.com/in/lucia-tenore-2168a47b/" target="_blank">Mon Linkedin</a></li>
+                    <i class="fas fa-at"></i>
+                    <li><a href="mailto:lucia.tenore@bluewin.ch">Mon Email</a></li>
                 </ul>
             </div>
         </div>
     </footer>
     <script src="../js/script.js"></script>
 </body>
+
 </html>

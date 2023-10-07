@@ -18,33 +18,31 @@
 </head>
 
 <body>
-      <header class="headOtherMobi">
+    <header class="headOtherMobi">
         <img class="logoHead" src="../images/logo.svg" alt="logo arbre de vie">
         <h1>Mon Arbre de Vie</h1>
         <div id="mySidenav" class="sidenav">
             <a id="closeBtn" href="#" class="close">×</a>
             <ul>
-                <li><a href="about.html">-- Qui suis-je</a></li>
-                <li><a href="index.html">-- Accueil</a></li>
-                <li><a href="activitis.html">-- Mes Activitées</a></li>
-                <li><a href="competence.html">-- Mes Compétences</a></li>
+                <li><a href="index.html">- Accueil</a></li>
+                <li><a href="about.html">- Qui suis-je</a></li>
             </ul>
             <ul>
-                <li><a href="activitis.html">-- Atelier Arbre de Vie</a>
+                <li>
+                    <a href="super.html">- Supervision</a>
                 </li>
-                <li><a href="Codev.html">-- Atelier Co-Développement</a>
+                <li><a href="activitis.html">- Atelier Arbre de Vie</a>
+                </li>
+                <li><a href="Codev.html">- Atelier Co-Développement</a>
                 </li>
                 <li>
-                    <a href="format.html">-- Les Formations</a>
+                    <a href="format.html">- Formations continue</a>
                 </li>
                 <li>
-                    <a href="team.html">-- Intervention dans les Équipes</a>
+                    <a href="team.html">- Intervention dans les Équipes</a>
                 </li>
                 <li>
-                    <a href="super.html">-- Supervision</a>
-                </li>
-                <li>
-                    <a href="biblio.html">-- Ressources Bibliographique/ Ressources Externe</a>
+                    <a href="biblio.html">- Ressources Bibliographique et liens</a>
                 </li>
             </ul>
         </div>
@@ -58,20 +56,19 @@
     </header>
     <header class="headDesk">
         <div class="headLogo">
-            <img class="logo" src="../images/logo.svg" alt="logo arbre de vie">
+            <img class="logoHead" src="../images/logo.svg" alt="logo arbre de vie">
             <h1>Mon Arbre de Vie</h1>
             <nav class="navHead">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="activitis.html">Mes Ateliers</a></li>
-                    <li><a href="competence.html">Mes Compétences</a></li>
+                    <li><a href="activitis.html">Mes Activitées</a></li>
                     <li><a href="about.html">Qui suis-je?</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="mainActiviti">
-        <div>
+        <div  class="select">
             <label for="selecteur"></label>
             <select id="selecteur" onchange="allerVersPage()">
                 <optgroup label="Sélectionnez un onglet :">
@@ -262,4 +259,5 @@
     </footer>
     <script src="../js/script.js"></script>
 </body>
+
 </html>

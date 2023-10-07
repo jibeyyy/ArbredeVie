@@ -13,7 +13,7 @@
 
 body {
     font-family: Open Sans, Helvetica, Arial;
-    font-size: 15px;
+    font-size: 12px;
     color: #00008b;
 
 }
@@ -55,7 +55,6 @@ body {
 
     background-color: lightgreen;
     border-radius: 50%;
-
 }
 
 .activiNav ul {
@@ -63,10 +62,22 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: 10px;
+    padding: 0;
 }
 
 i:before {
-    margin: 0 20px;
+    margin: 0 5px;
+}
+
+.select {
+    width: 90%;
+    margin: 20px auto;
+}
+
+select {
+    background-color: lightgreen;
+    padding: 3px;
+    border-radius: 5px;
 }
 
 .wrong {
@@ -83,9 +94,7 @@ i:before {
     font-weight: normal;
 }
 
-
-/*  ///  start home page   ///
-*/
+/*  //////////////////////////////////  start home page   //////////////////////////*/
 
 .mainHome {
     background-image: url('../images/imgIndex.jpg');
@@ -95,8 +104,26 @@ i:before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
 }
+
+.textIndex {
+    background: rgba(255, 255, 255, 0.5);
+    bottom: 20px;
+    width: 60%;
+    border-radius: 50%;
+    padding: 38px;
+    text-shadow: 0px 0px black;
+}
+
+.textIndex p {
+    color: #000;
+    font-weight: bold;
+    text-shadow: -1px -1px 3px #fff;
+    font-size: initial;
+}
+
+.headOtherMobiIndex {}
 
 .item {
     display: none;
@@ -136,6 +163,12 @@ a:active {
     cursor: wait;
 }
 
+.headOtherMobi img,
+.headOtherMobiIndex img {
+    width: 125px;
+    border-radius: 50%;
+}
+
 .logo {
     width: 80px;
     border-radius: 50%;
@@ -143,7 +176,7 @@ a:active {
 
 /* end home page */
 
-/* header commun */
+/*///////////////////////////////////   header commun  :////////////////////////////////////////*/
 
 .burger-icon {
     display: block;
@@ -204,6 +237,14 @@ a:active {
     margin: 6px 0;
 }
 
+.headOtherMobiIndex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgreen;
+    padding: 20px;
+}
+
 .headOtherMobi {
     display: flex;
     flex-direction: column;
@@ -218,79 +259,72 @@ a:active {
 
 /* end header commun */
 
-/* competence page  */
-
-table,
-td {
-    border: 1px solid #333;
-}
-
-thead,
-tfoot {
-    background-color: #333;
-    color: #fff;
-}
+/* :////////////////////////////////////////   competence page  /////////////////////////////////////////:*/
 
 /* end competence page */
 
 /* valeur page */
 
 .mainValeur {
-
     text-align: center;
     margin: 1em;
     font-size: 1.5em;
-
 }
-
 
 /* end valeur page */
 
-/* about page */
+/* ///////////////////////////////  about page ///////////////////////////////////////*/
 
 .aboutMain {
     text-align: center;
+}
+
+.aboutMain h2 {
+    width: 60%;
+    margin: 50px auto;
+    color: #00008a;
+    border-bottom: 1px solid #2f2ed1;
+    padding: 10px;
+    box-shadow: 2px 2px 6px #1a164f;
+    text-shadow: 1px 2px 5px #00008b;
 }
 
 .sectionAbout {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
+}
 
+.sectionAbout a {
+    padding: 1px;
 }
 
 .aboutMain p {
-    margin: 20px;
+    line-height: 1.5em;
+    width: 85%;
+    margin: 10px auto;
+    text-align: left;
 }
 
-.aboutMain h2,
 .aboutMain h3 {
     width: 60%;
     margin: 20px auto;
     color: #00008a;
     border-bottom: 1px solid #2f2ed1;
     padding: 10px;
-    box-shadow: 2px 1px #9089e9;
 }
 
 .aboutImg img {
-
     border-radius: 10px;
     max-width: 65%;
     margin: 10px auto;
-}
-
-.aboutText {
-    position: relative;
 }
 
 .aboutText p {
     line-height: 1.5em;
     width: 85%;
     margin: 10px auto;
-    text-align: justify;
 }
-
 
 .about {
     display: none;
@@ -299,7 +333,6 @@ tfoot {
 .xpPro {
     margin: 30px auto;
 }
-
 
 .xpPro li {
     list-style: circle;
@@ -310,7 +343,6 @@ tfoot {
 }
 
 .Value {
-
     display: flex;
     justify-content: space-around;
     width: 85%;
@@ -323,10 +355,9 @@ tfoot {
     display: none;
 }
 
-
 /* end about page */
 
-/* activitis page */
+/* ////////////////////////////////    activitis page   ////////////////////////////////*/
 
 .cont-hoover img {
     max-width: 100%;
@@ -396,19 +427,16 @@ tfoot {
     box-shadow: 3px 5px 15px green;
 }
 
-
 .divGrid {
     max-width: 70%;
     text-align: center;
     margin: 30px auto;
-
 }
 
 .divGrid img {
     width: 100%;
     height: auto;
 }
-
 
 .divGrid p {
     font-size: 1.2rem;
@@ -419,7 +447,6 @@ tfoot {
     color: #00008b;
 }
 
-
 .endSectionA {
     background: linear-gradient(68deg, rgba(96, 213, 95, 1) 22%, rgba(146, 228, 146, 0.9318102240896359) 94%);
     width: 80%;
@@ -428,8 +455,6 @@ tfoot {
     flex-direction: column;
     margin: 10px auto;
     padding: 5px;
-
-
 }
 
 .sectionAPara {
@@ -468,7 +493,7 @@ tfoot {
 
 /* end activitis page */
 
-/* co-developement page */
+/* //////////////////////////////   co-developement page   ////////////////////////////////:*/
 
 .CodevTitle {
     background: linear-gradient(68deg, rgba(96, 213, 95, 1) 22%, rgba(146, 228, 146, 0.9318102240896359) 94%);
@@ -477,7 +502,6 @@ tfoot {
     padding: 5%;
     border-radius: 5px;
     text-align: center;
-
 }
 
 .CodevTitle img {
@@ -493,7 +517,6 @@ tfoot {
     padding: 20px 0;
     color: #e83838;
     line-height: 30px;
-
 }
 
 .box1 {
@@ -510,6 +533,7 @@ tfoot {
 
 .box1 p {
     margin: 0 25px;
+    text-align: left;
 }
 
 .box {
@@ -555,7 +579,7 @@ tfoot {
     padding-bottom: 15px;
 }
 
-/* ////   formation page /////*/
+/* /////////////////////////////////////////   formation page:   ///////////////////////////////://///*/
 
 .mainForma {
     text-align: center;
@@ -566,7 +590,6 @@ tfoot {
     width: 90%;
     margin: 50px auto;
     border: solid 1px #00008b;
-
 }
 
 .flyer {
@@ -581,7 +604,7 @@ tfoot {
 }
 
 /*// end formation page /*
- /* ////   RESSOURCE PAGE  ///*/
+ /* /////////////////////////////////////////   RESSOURCE PAGE  ////////////////////////////////////*/
 
 .carousel {
     width: 60%;
@@ -635,6 +658,90 @@ tfoot {
 .Compet ul {
     padding-left: 0;
 }
+
+/* end competence page */
+
+/* ////////////////////////////////    Supervision page  /////////////////////////////*/
+
+.superLeft,
+.SuperRight {
+    width: 90%;
+    margin: 30px auto;
+    box-shadow: 2px 2px 5px #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SuperRight {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(29deg, rgba(255, 255, 255, 1) 28%, rgba(252, 176, 69, 1) 94%);
+}
+
+.superLeft {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(321deg, rgba(255, 255, 255, 1) 28%, rgba(252, 176, 69, 1) 94%);
+}
+
+.sectionSuper ul {
+    padding: 0;
+}
+
+.sectionSuper li {
+    margin: 10px 3px;
+}
+
+.sectionSuper img {
+    max-width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.sectionSuper p {
+    margin-left: 10px;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.sectionSuper h1,
+.sectionSuper h2,
+.sectionSuper h3 {
+    width: 60%;
+    margin: 50px auto;
+    color: #00008a;
+    padding: 12px;
+    box-shadow: 2px 2px 6px #1a164f;
+    text-shadow: 1px 1px #00008b;
+    text-align: center;
+}
+
+.content {
+    margin: 0 10px;
+}
+
+.sectionTable {
+    text-align: center;
+}
+
+.sectionTable p {
+    width: 70%;
+    margin: 10px auto;
+    text-align: start;
+}
+
+.priceSuper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hr {
+    margin: 10px 90px;
+}
+
+/* ////////////////////  end supervision page  //////////////////////////////////////////*/
 
 /*
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -700,10 +807,10 @@ footer div:first-child {
         width: 6%;
         border-radius: 50%;
     }
-    .headMobile {
+    .headOtherMobi {
         display: none;
     }
-    .headOtherMobi {
+    .headMobile {
         display: none;
     }
     .headDesk {
@@ -714,16 +821,13 @@ footer div:first-child {
         height: 200px;
     }
     .headLogo {
-
         background-color: lightgreen;
         display: flex;
         opacity: 0.8;
         height: 62px;
         align-items: center;
-
         justify-content: space-around;
     }
-
     .navHead {
         margin: 0;
         width: 60%;
@@ -742,7 +846,6 @@ footer div:first-child {
         color: #fff;
         border-radius: 5px;
         padding: 5px 10px;
-
     }
 
     a:active {
@@ -761,8 +864,6 @@ footer div:first-child {
     .aboutImg h3 {
         font-size: 2em;
     }
-
-
     /*////////////////////////     activitis page    //////////////////////////////////////////////*/
     .mainActiviti {
         font-size: 1.2em;
@@ -786,11 +887,9 @@ footer div:first-child {
     .cont-hoover figure {
         text-align: center;
     }
-
     .grid i {
         font-size: 2em;
     }
-
     .grid h3 {
         font-size: 1.5em;
     }
@@ -801,7 +900,6 @@ footer div:first-child {
         width: 50%;
     }
     .article {
-
         background: linear-gradient(68deg, rgba(96, 213, 95, 1) 22%, rgba(146, 228, 146, 0.9318102240896359) 94%);
         width: 80%;
         margin: 20px auto;
@@ -829,7 +927,6 @@ footer div:first-child {
         border-radius: 10px;
         flex-wrap: wrap;
         box-shadow: 0 0 10px;
-
     }
     .teamImg div {
         width: 90%;
@@ -851,14 +948,11 @@ footer div:first-child {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-
     }
-
     .sectionAPara {
         display: flex;
         align-items: center;
     }
-
     .verticalLine {
         height: 3px;
         background-color: #000;
@@ -871,15 +965,12 @@ footer div:first-child {
     .mainCodev {
         position: relative;
     }
-
     .CodevTitle {
         width: 60%;
         padding: 5%;
         text-align: center;
         border-radius: 50%;
-
     }
-
     .sectionC {
         background: inherit;
         display: flex;
@@ -887,9 +978,7 @@ footer div:first-child {
         text-align: center;
         margin: 40px 0;
         line-height: 30px;
-
     }
-
     .box1 {
         background-image: url(../images/codev2.jpg);
         background-size: cover;
@@ -898,14 +987,13 @@ footer div:first-child {
         border-radius: 49%;
         margin: 10px auto;
         box-shadow: 8px 6px 12px #034103;
-
     }
     .box1 p {
         color: #fff;
         font-weight: bold;
         text-shadow: 2px 2px black;
+        text-align: center;
     }
-
     .box1 h2,
     .box1 h4 {
         font-weight: bold;
@@ -968,14 +1056,12 @@ footer div:first-child {
         width: 95%;
         margin: 10px auto;
     }
-
     .aboutText {
         line-height: 1.5em;
         width: 85%;
         margin: 10px auto;
         text-align: center;
     }
-
     .aboutMain p {
         display: block;
         width: 70%;
@@ -1002,9 +1088,7 @@ footer div:first-child {
         justify-content: space-evenly;
         height: 100%;
         align-items: center;
-
     }
-
     .circleContainer div {
         width: 20%;
         height: 190px;
@@ -1016,9 +1100,7 @@ footer div:first-child {
         text-align: center;
         cursor: pointer;
         transition: transform 0.3s ease;
-
     }
-
     .circleContainer div:hover {
         transform: scale(1.5);
     }
@@ -1039,7 +1121,6 @@ footer div:first-child {
     #circle4 {
         background-color: rgba(255, 255, 0, 0.8);
     }
-
     .aboutMain h2 {
         width: 60%;
         margin: 50px auto;
@@ -1050,6 +1131,7 @@ footer div:first-child {
         text-shadow: 1px 2px 5px #00008b;
     }
 
+
     /*   //////////////////////:////////////     ressources page //////////////////////////////////////////*/
     .w-100 {
         width: 90%;
@@ -1058,8 +1140,8 @@ footer div:first-child {
     /* //////////// end ressource page /////////////////////////////////////////*/
     /*/////////////////////////////////////////  Competence page ///////////////////////////////*/
     .Compet {
-        flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
     }
     .Compet div {
         flex-wrap: wrap;
@@ -1067,9 +1149,7 @@ footer div:first-child {
         justify-content: center;
         line-height: 0.9;
         width: 40%;
-
     }
-
     /* //////////////////////////////////////:   footer //////////////////////////////////////////*/
     footer {
         display: flex;
@@ -1089,7 +1169,6 @@ footer div:first-child {
     }
     .divFooter div:first-child {
         margin: 10px 0px 0px 50px;
-
     }
 }
 
@@ -1110,63 +1189,61 @@ footer div:first-child {
         height: 1158px;
         border-radius: 10px;
     }
-    .headOtherMobi {
-        display: none;
-    }
-    .headMobile {
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: lightgreen;
-        padding: 20px;
+    .headMobile {
+        display: none;
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*align-items: center;*/
+        /*background-color: lightgreen;*/
+        /*padding: 20px;*/
     }
-    .item2,
-    .item4 {
-        display: block;
-    }
-    .item1 {
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        height: 70%;
-    }
-    .item1 a {
-        border: solid 0.5px gold;
-        padding: 5px 15px;
-    }
-    .item a {
-        font-size: 2em;
-        color: #fff;
-        font-weight: bold;
-    }
-    .item1 a {
-        display: flex;
-        width: 80%;
-        background-color: #12BA12;
-        color: white;
-        font-size: 16px;
-        border: none;
-        transform-origin: center;
-        transform: rotate(90deg);
-        transition: transform 1s;
-        justify-content: center;
-        border-radius: 15px;
-        padding: 12px 14px;
-    }
-    .item1 a:hover {
-        transform: rotate(0deg);
-    }
-    .item2 {
-        height: 22%;
-        align-items: center;
-    }
-    .item4 {
-        height: 30%;
-        align-items: center;
-    }
+    /*.item2,*/
+    /*.item4 {*/
+    /*    display: block;*/
+    /*}*/
+    /*.item1 {*/
+    /*    text-align: center;*/
+    /*    display: flex;*/
+    /*    flex-direction: row;*/
+    /*    align-items: center;*/
+    /*    justify-content: center;*/
+    /*    height: 70%;*/
+    /*}*/
+    /*.item1 a {*/
+    /*    border: solid 0.5px gold;*/
+    /*    padding: 5px 15px;*/
+    /*}*/
+    /*.item a {*/
+    /*    font-size: 2em;*/
+    /*    color: #fff;*/
+    /*    font-weight: bold;*/
+    /*}*/
+    /*.item1 a {*/
+    /*    display: flex;*/
+    /*    width: 80%;*/
+    /*    background-color: #12BA12;*/
+    /*    color: white;*/
+    /*    font-size: 16px;*/
+    /*    border: none;*/
+    /*    transform-origin: center;*/
+    /*    transform: rotate(90deg);*/
+    /*    transition: transform 1s;*/
+    /*    justify-content: center;*/
+    /*    border-radius: 15px;*/
+    /*    padding: 12px 14px;*/
+    /*}*/
+    /*.item1 a:hover {*/
+    /*    transform: rotate(0deg);*/
+    /*}*/
+    /*.item2 {*/
+    /*    height: 22%;*/
+    /*    align-items: center;*/
+    /*}*/
+    /*.item4 {*/
+    /*    height: 30%;*/
+    /*    align-items: center;*/
+    /*}*/
     /* ///////: end page Index /////////////////////////////////:*/
     /* //////////////////////////////////// page about ////////////////////*/
     .xpPro {
@@ -1179,91 +1256,75 @@ footer div:first-child {
         margin: 10px auto;
         height: 800px;
     }
-
     .detail-button {
-        background-color: #e74c3c;
+        background-color: #39fa7a;
         border-radius: 50%;
-        cursor: pointer;
-        height: 210px;
-        width: 210px;
+        height: 190px;
+        color: #000;
+        width: 180px;
         position: absolute;
-        top: 40%;
+        top: 41%;
         left: 40%;
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 4px 3px #ccc;
+        box-shadow: 3px 2px 4px;
+        text-shadow: 1px 0px #ffffff;
     }
-
     .circle {
         position: absolute;
-        background-color: #e74c3c;
-        width: 160px;
-        height: 150px;
+        background-color: #39fa7a;
+        width: 190px;
+        color: #000;
+        height: 180px;
+        box-shadow: 3px 2px 4px;
+        text-shadow: 1px 0px #ffffff;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-
     .circleA {
         position: absolute;
         top: 5%;
         left: 40%;
-        box-shadow: 3px 2px #ccc;
-        text-shadow: 1px 0px #fff;
+        box-shadow: 3px 2px 4px;
+        text-shadow: 1px 0px #ffffff;
     }
-
     .circle:nth-child(2) {
-        top: 8%;
-        right: 10%;
-        box-shadow: 3px 2px #ccc;
-        text-shadow: 1px 0px #fff;
-    }
+        top: 10%;
+        right: 8%;
 
+    }
     .circle:nth-child(3) {
         top: 42%;
-        right: 8%;
-        box-shadow: 3px 2px #ccc;
-        text-shadow: 1px 0px #fff;
+        right: 2%;
 
     }
-
     .circle:nth-child(4) {
-        bottom: 6%;
-        right: 16%;
-        box-shadow: 3px 2px #ccc;
-        text-shadow: 1px 0px #fff;
+        bottom: 4%;
+        right: 6%;
 
     }
-
     .circle:nth-child(5) {
         bottom: 1%;
         left: 42%;
-        box-shadow: 3px 2px #ccc;
-        text-shadow: 1px 0px #fff;
-    }
 
+    }
     .circle:nth-child(6) {
-        bottom: 6%;
-        left: 10%;
-        box-shadow: 3px 2px #ccc;
-        text-shadow: 1px 0px #fff;
-    }
+        bottom: 4%;
+        left: 7%;
 
+    }
     .circle:nth-child(7) {
         top: 42%;
-        left: 4%;
-        box-shadow: 3px 2px #ccc;
-        text-shadow: 1px 0px #fff;
+        left: 2%;
 
     }
-
     .circle:nth-child(8) {
-        top: 8%;
-        left: 10%;
-        box-shadow: 3px 2px #ccc;
-        text-shadow: 1px 0px #fff;
+        top: 10%;
+        left: 9%;
+
     }
     /* ///////////////////////////////// header nav ///////////////////////////////////////*/
     .headDesk {
@@ -1287,7 +1348,6 @@ footer div:first-child {
         font-size: 26px;
         padding: 5px;
     }
-
     .navHead ul a:hover {
         color: #fff;
         transform: scale(1.5);
@@ -1321,6 +1381,9 @@ footer div:first-child {
         border-radius: 10px;
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
         text-align: initial;
+    }
+    .about a {
+        padding: 1px;
     }
     .about p {
         line-height: initial;
@@ -1448,33 +1511,106 @@ footer div:first-child {
         bottom: 0;
         right: 0;
     }
-    /* ressource page  */
     /* competence page   ////////////////////////////////*/
     .Compet {
-        width: 60%;
+        display: none;
     }
+    /* /////////////////////////////////   Supervision  ///////////////////////////////*/
+    .sectionSuper img {
+        margin: 20px 20px;
+        height: 320px;
+    }
+    .sectionSuper div {
+        width: 70%;
+        margin: 30px auto;
+    }
+    .sectionSuper h1,
+    .sectionSuper h2,
+    .sectionSuper h3 {
+        padding: 12px;
+        box-shadow: 2px 2px 6px #1a164f;
+        text-shadow: 1px 2px 6px #00008b;
+        text-align: center;
+    }
+
+    .sectionSuper p {
+        padding: 10px;
+        line-height: 1.5;
+        width: 30%;
+
+    }
+
+    .SuperRight {
+        box-shadow: 5px 2px 6px #ccc;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-arround;
+        align-items: center;
+    }
+    .superLeft {
+        box-shadow: -5px 4px 4px #ccc;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-arround;
+        align-items: center;
+    }
+
 }
 
 @media only screen and (min-width: 1300px) {
 
-    /* activitis page */
-    .sectionA div:first-child {
-        width: 70%;
-        margin: 40px auto;
-        padding: 45px 20px;
-        border-radius: 5px;
+
+    /*   index page    */
+    .textIndex {
+        width: 49%;
+        border-radius: 50%;
+        padding: 49px;
     }
-    .hover {
-        width: 92%;
-        height: 94%;
+    .textIndex p {
+        color: inherit;
+        font-weight: bold;
+        text-shadow: -1px -1px 3px #fff;
+        font-size: inherit;
+        width: 50%;
+        margin: 10px auto;
+        text-align: start;
     }
-    .endSectionA {
-        width: 60%;
-        background: inherit;
-    }
-    .sectionAPAra {
-        width: 70%;
-        margin: 0 auto;
-    }
-    /* end activitis page */
+}
+
+/* activitis page */
+
+.sectionA div:first-child {
+    width: 70%;
+    margin: 40px auto;
+    padding: 45px 20px;
+    border-radius: 5px;
+}
+
+.hover {
+    width: 92%;
+    height: 94%;
+}
+
+.endSectionA {
+    width: 60%;
+    background: inherit;
+}
+
+.sectionAPAra {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* end activitis page */
+
+/* about page */
+
+.detail-button {
+    height: 225px;
+    width: 240px;
+    top: 39%;
+}
+
 }
