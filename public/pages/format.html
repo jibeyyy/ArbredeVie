@@ -10,10 +10,13 @@
     <title>Formations</title>
 
     <link rel="icon" type="image/png" href="../images/logo.svg">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <link rel="stylesheet" href="../css/normalize.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
@@ -24,30 +27,30 @@
         <div id="mySidenav" class="sidenav">
             <a id="closeBtn" href="#" class="close">×</a>
             <ul>
-                <li><a href="index.html">- Accueil</a></li>
-                <li><a href="about.html">- Qui suis-je</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">Qui suis-je</a></li>
             </ul>
             <ul>
                 <li>
-                    <a href="super.html">- Supervision</a>
+                    <a href="super.html">Supervision</a>
                 </li>
-                <li><a href="activitis.html">- Atelier Arbre de Vie</a>
+                <li><a href="activitis.html">Atelier Arbre de Vie</a>
                 </li>
-                <li><a href="Codev.html">- Atelier Co-Développement</a>
-                </li>
-                <li>
-                    <a href="format.html">- Formations continue</a>
+                <li><a href="Codev.html">Atelier Co-Développement</a>
                 </li>
                 <li>
-                    <a href="team.html">- Intervention dans les Équipes</a>
+                    <a href="format.html">Formation continue</a>
                 </li>
                 <li>
-                    <a href="biblio.html">- Ressources Bibliographique et liens</a>
+                    <a href="team.html">Intervention dans les Équipes</a>
+                </li>
+                <li>
+                    <a href="biblio.html">Ressources bibliographiques et liens</a>
                 </li>
             </ul>
         </div>
         <a href="#" id="openBtn" class="BtnA">
-  <span class="burger-icon">
+  <span class="burger-icon animate__animated animate__rotateIn">
     <span></span>
     <span></span>
     <span></span>
@@ -77,14 +80,14 @@
                     <option value="Sélectionnez un onglet :">Sélectionnez un onglet :</option>
         <option value="activitis.html">Arbre de Vie</option>
         <option value="Codev.html">Co-Développement</option>
-        <option value="format.html">Formations</option>
+        <option value="format.html">Formation continue</option>
         <option value="super.html">Supervisions</option>
-        <option value="team.html">Intervention dans les Équipes</option>
-        <option value="biblio.html">Ressources biblio/externe</option>
+        <option value="team.html">Intervention dans les équipes</option>
+        <option value="biblio.html">Ressources bibliographiques et liens</option>
        </optgroup>
     </select>
         </div>
-        <section>
+        <section CLASS="formation">
             <h1>FORMATIONS</h1>
             <p>
                 <h3>Retrouvez mes formations qui se déroulent au <a href="https://crede-vd.ch">CREDE</a></h3>
@@ -140,6 +143,9 @@
                 </div>
             </div>
         </section>
+        <article class="articleForma">
+            <p>Ces formations peuvent être organisées « intra-muros » dans vos institutions pour un plus grand impact au niveau de la cohérence pédagogique: chaque collaborateur reçoit la même information. Veuillez prendre <a href="mailto:lucia.tenore@bluewin.ch">contact</a>                avec moi pour une offre personnalisée selon les besoins de l’institution.</p>
+        </article>
 
 
         <div class="activiNav">
@@ -152,26 +158,32 @@
 
     </main>
     <footer>
-        <div>
-            <img class="logo" src="../images/logo.svg" alt="logo Arbre de vie">
-        </div>
-        <div class="divFooter">
+        <div class="footer">
             <div>
-                <h3>CONTACT :</h3>
+                <img class="logo" src="../images/logo.svg" alt="logo Arbre de vie">
             </div>
-            <div>
-                <ul class="listFoot">
-                    <li><i class="fas fa-map-marker-alt"></i>
-                        <address>Avenue de Cour 7, 1007 Lausanne</address>
-                    </li>
-                    <li><i class="fas fa-phone"></i><a href="tel:+41794402067">+4179/440.20.67</a></li>
-                    <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/lucia-tenore-2168a47b/" target="_blank">Mon Linkedin</a></li>
-                    <li><i class="fas fa-at"></i><a href="mailto:lucia.tenore@bluewin.ch">Mon Email</a></li>
-                </ul>
+            <div class="divFooter">
+                <div>
+                    <h3>CONTACT :</h3>
+                </div>
+                <div>
+                    <ul class="listFoot">
+                        <li class="liFootPara"><i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p class="paraFootAddres">Avenue de Cour 7,</p>
+                                <p class="paraFootAddres">1007 Lausanne</p>
+                            </div>
+                        </li>
+                        <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/lucia-tenore-2168a47b/" target="_blank" class="paraFootAddres">Mon Linkedin</a></li>
+                        <li><i class="fas fa-at"></i><a href="mailto:lucia.tenore@bluewin.ch" class="paraFootAddres">Mon Email</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <div class="reserve"><small>&#169; Tous droits réservés.</small></div>
     </footer>
     <script src="../js/script.js"></script>
 </body>
 
 </html>
+
