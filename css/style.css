@@ -1968,7 +1968,6 @@ summary:hover {
     .sectionSuper h3 {
         padding: 12px;
         box-shadow: 2px 2px 6px #1a164f;
-        text-shadow: 1px 2px 6px #00008b;
         text-align: center;
     }
 
@@ -2006,8 +2005,6 @@ summary:hover {
     .ressourceB h2 {
         padding: 12px;
         box-shadow: 2px 2px 6px #1a164f;
-        /*text-shadow: 1px 2px 6px #00008b;
-        */
         text-align: center;
     }
 
